@@ -19,9 +19,8 @@ class MyApp extends StatelessWidget {
       title: 'Perplexity Demo',
       theme: ThemeData(
         scaffoldBackgroundColor: AppColors.background,
-        textTheme: GoogleFonts.interTextTheme(
-          ThemeData.dark().textTheme
-        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.submitButton),
+        textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
       ),
       home: HomePage(),
     );
