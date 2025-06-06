@@ -19,6 +19,6 @@ sort_source_service = SortSourceService()
 @app.post("/chat")
 def chat_endpoint(body: ChatBody):
     search_results = search_service.web_search(body.query)
-    print(search_results)
+    # print(search_results)
     sort_source_service.sort_sources(body.query, search_results)
     return body.query
